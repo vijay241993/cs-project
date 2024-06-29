@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_HUB_CREDENTIALS = credentials('dockercreds')
-        GIT_REPO_URL = 'https://github.com/N-Moorthy/CapstoneProject.git'
+        GIT_REPO_URL = 'https://github.com/vijay241993/cs-project.git'
         GIT_CREDENTIALS_ID = 'gitcreds'
     }
 
