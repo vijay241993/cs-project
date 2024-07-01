@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_CREDENTIALS = credentials
+        DOCKER_HUB_CREDENTIALS = 'credentials'
         GIT_REPO_URL = 'https://github.com/vijay241993/cs-project.git'
         GIT_CREDENTIALS_ID = 'gitcreds'
     }
