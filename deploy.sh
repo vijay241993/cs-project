@@ -19,12 +19,12 @@ echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 # Docker deployment step
 if [[ "${BRANCH_NAME}" == "origin/Prod" ]]; then
     ./build.sh
-    docker tag capimg hanumith/prodcapstone:v1
-    docker push hanumith/prodcapstone:v1
+    docker tag capimg viju93/prodcapstone:v1
+    docker push viju93/prodcapstone:v1
 elif [[ "${BRANCH_NAME}" == "origin/Dev" ]]; then
     ./build.sh
-    docker tag capimg hanumith/devcapstone:v1
-    docker push hanumith/devcapstone:v1
+    docker tag capimg viju93/devcapstone:v1
+    docker push viju93/devcapstone:v1
 else
     echo "Deployment Failed: Unsupported branch ${BRANCH_NAME}"
     exit 1
